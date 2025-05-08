@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nepal's Major Festivals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      color: #2d2d2d;
+    }
+
+    header {
+      position: relative;
+      height: 90vh;
+      background: url('festivals_banner.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    header h1,
+    header p {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    header h1 {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 24px;
+    }
+
+    nav {
+      background-color: #ffffffaa;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 15px;
+      backdrop-filter: blur(5px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #d62828;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #f77f00;
+    }
+
+    section {
+      padding: 80px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff5e1;
+      border-radius: 40px;
+      margin: 50px auto;
+      width: 90%;
+      max-width: 1100px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      font-size: 42px;
+      color: #9d0208;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 18px;
+      line-height: 1.7;
+      max-width: 800px;
+    }
+
+    .festival-img {
+      margin-top: 30px;
+      border-radius: 20px;
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .festival-img:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      background-color: #6a040f;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 40px;
+      }
+      header p {
+        font-size: 18px;
+      }
+      section h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="festivals.jpg" alt="Festivals Banner" style="position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+    <div>
+      <h1>Nepal's Major Festivals</h1>
+      <p>Joy, Color, and Culture in Every Celebration</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#dashain">Dashain</a>
+    <a href="#tihar">Tihar</a>
+    <a href="#holi">Holi</a>
+  </nav>
+
+  <section id="dashain">
+    <h2>Dashain</h2>
+    <p>Dashain is Nepal's longest and most cherished festival, celebrating the triumph of good over evil. Families reunite, tika and jamara are placed on foreheads, and blessings flow from elders. The skies fill with kites and joy permeates every home.</p>
+    <img class="festival-img" src="dahsain.jpg" alt="Dashain celebration">
+  </section>
+
+  <section id="tihar">
+    <h2>Tihar</h2>
+    <p>Known as the Festival of Lights, Tihar honors animals, wealth, and sibling love across five vibrant days. Rangolis decorate homes, oil lamps light the night, and the air is filled with laughter and Deusi-Bhailo songs.</p>
+    <img class="festival-img" src="tihar.jpg" alt="Tihar celebration">
+  </section>
+
+  <section id="holi">
+    <h2>Holi</h2>
+    <p>Holi, the Festival of Colors, bursts with joy as people splash colors, dance in the streets, and celebrate the arrival of spring. It's a playful, unforgettable day shared by all with pure happiness and love.</p>
+    <img class="festival-img" src="holi.jpg" alt="Holi celebration">
+  </section>
+</body>
+</html>
